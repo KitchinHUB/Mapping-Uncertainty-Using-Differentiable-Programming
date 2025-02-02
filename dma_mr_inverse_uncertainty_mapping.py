@@ -8,10 +8,7 @@ config.update("jax_enable_x64", True)
 
 from DMA_MR_ss import *
 import matplotlib.pyplot as plt
-
 from opyrability import implicit_map
-
-
 
 
 
@@ -24,15 +21,8 @@ y2 = k +  (b * np.sin(theta) * np.cos(phi) + a * np.cos(theta) * np.cos(phi))
 
 
 
-
-
 AIS_PTS=np.array([y1,y2]).T
 plt.plot(AIS_PTS[:,0], AIS_PTS[:,1])
-
-
-
-
-
 output_init = np.array([480.00, 600.00])
 
 
@@ -63,8 +53,6 @@ key = random.PRNGKey(0)
 # Number of simulation points and center of ellipse.
 num_simulations = 10000
 a, b= 0.15, 1
-
-
 
 
 # Scaling factor for 95% confidence interval in 2D
@@ -110,7 +98,7 @@ ax.legend()
 plt.show()
 
 
-# In[58]:
+
 
 
 from opyrability import nlp_based_approach
@@ -127,7 +115,6 @@ u0 = output_init
 lb = np.array([300, 300])
 ub = np.array([1000, 1000])
 for i in range(num_simulations):
-    # print(i)
     benzene = benzene_samples[i]
     ch4 = ch4_samples[i]
     
@@ -146,9 +133,6 @@ for i in range(num_simulations):
     
     v0_values.append(fDIS[:,0])
     v_He_values.append(fDIS[:,1])
-
-
-
 
 
 
@@ -184,7 +168,4 @@ v0_hexbin = npp.array(v0_values)
 AOS_PTS_hexbin = npp.array(AOS_PTS)
 
 
-
-
-
-npp.savez('montecarlo2.npz', v_He_hexbin, v0_hexbin, AOS_PTS_hexbin)
+npp.savez('montecarlo_data.npz', v_He_hexbin, v0_hexbin, AOS_PTS_hexbin)
