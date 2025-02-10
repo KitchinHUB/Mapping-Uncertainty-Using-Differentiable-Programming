@@ -18,10 +18,10 @@ Below is an overview of the files included in this repository:
 - **[`time_montecarlo_dma_mr.png`](time_montecarlo_dma_mr.png)** – Screenshot of the **computational time required** to run all **10,000 MC simulations**, executed on a **Lenovo Legion 2021 (32GB RAM, Ryzen 7 5800H, Windows 11)**.
 
 ## 🔧 Getting Started
-To run the models and generate results, ensure you have the required Python dependencies installed. You can set up the environment using:
+To run the models and generate results, ensure you have the required Python dependencies installed. You can set up the conda environment using:
 
 ```sh
-pip install -r requirements.txt  
+conda create --name <env> --file requirements.txt
 ```
 
 
