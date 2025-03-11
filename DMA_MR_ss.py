@@ -48,7 +48,7 @@ def dma_mr_uncertain_pressures(input_vec, output_vec):
 
     # Initial conditions
     y0 = jnp.hstack((Ft0, jnp.zeros(7)))
-    rtol, atol = 1e-6, 1e-6
+    rtol, atol = 1e-10, 1e-12
 
     z = jnp.linspace(0, 17.2283, 2000)
     # z = jnp.linspace(0, 30, 2000)
