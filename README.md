@@ -13,7 +13,7 @@ Below is an overview of the files included in this repository:
 - **[`dma_mr_inverse_uncertainty_mapping.py`](dma_mr_inverse_uncertainty_mapping.py)** – Python script implementing the **inverse uncertainty propagation** for the DMA-MR case study.
 - **[`cstr_example_bimodal.ipynb`](cstr_example_bimodal.ipynb)** – Jupyter Notebook demonstrating a variation of the CSTR case-study where the uncertainty region is described by a bimodal distribution (mixture of Gaussians), to illustrate that the proposed approach works well for complex distributions.
 - **[`proof-of-concept-3d-continuation.ipynb`](proof-of-concept-3d-continuation.ipynb)** – Jupyter Notebook showing a proof-of-concept of a high-dimensional (3D) mapping of an uncertainty region defined by an ellipsoid.
-**[`fed-batch-reactor-3d-continuation.ipynb`](fed-batch-reactor-3d-continuation.ipynb)** – Jupyter Notebook showing a 3D uncertainty inverse mapping of state variables of a fed-batch biological reactor. The main complication, besides the higher dimensionality, is the fact that the system equations need to be numerically integrated as an analytical solution does not exist, similar to the DMA-MR case-study.
+- **[`fed-batch-reactor-3d-continuation.ipynb`](fed-batch-reactor-3d-continuation.ipynb)** – Jupyter Notebook showing a 3D uncertainty inverse mapping of state variables of a fed-batch biological reactor. The main complication, besides the higher dimensionality, is the fact that the system equations need to be numerically integrated as an analytical solution does not exist, similar to the DMA-MR case-study.
 
 
 ### 📊 Data & Visualization
